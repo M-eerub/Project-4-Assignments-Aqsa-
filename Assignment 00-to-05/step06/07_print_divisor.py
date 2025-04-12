@@ -1,0 +1,13 @@
+def print_divisors(num):
+    print(f"Here are the divisors of {num}:")
+    for i in range(1, num + 1):
+        if num % i == 0:  # Check if i is a divisor of num (no remainder)
+            print(i, end=" ")
+
+def main():
+    num = int(input("Enter a number: "))  # Asking for user input
+    print_divisors(num)  # Call the function to print divisors
+
+# Run the program
+if __name__ == "__main__":
+    main()
